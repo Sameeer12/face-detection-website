@@ -9,10 +9,12 @@ import Logo from './components/Logo/Logo';
 import ImageLinkForm from './components/ImageLinkForm/ImageLinkForm';
 import Rank from './components/Rank/Rank';
 import Clarifai from 'clarifai';
+import { clarifai_api_key } from './keys';
 
 const app = new Clarifai.App({
-  apiKey: '111df563c94d4ea7931fe00371ac80fc'
+  apiKey: clarifai_api_key
 });
+
 const particlesOptions = {
   particles: {
     number: {
